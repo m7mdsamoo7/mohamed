@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>السيارات - سوق المركبات</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body{font-family:'Tajawal',sans-serif;margin:0;padding:0;background:#f5f5f5}
+    .nav-icons{display:flex;justify-content:center;background:#2a3d58;padding:15px 0;position:sticky;top:0}
+    .nav-icons a{color:#fff;text-decoration:none;font-size:1.5rem;margin:0 15px;padding:10px;border-radius:50%;width:50px;height:50px;display:flex;align-items:center;justify-content:center;transition:all .3s}
+    .nav-icons a:hover{background:#f4a261;transform:translateY(-3px)}
+    .nav-icons a.active{background:#f4a261;color:#000}
+    .container{max-width:1200px;margin:20px auto;padding:15px;background:#fff;border-radius:8px;box-shadow:0 0 10px rgba(0,0,0,.1)}
+    .page-title{text-align:center;color:#2a3d58;margin-bottom:20px;font-size:1.8rem}
+    .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:20px}
+    .card{background:#fff;border-radius:8px;overflow:hidden;box-shadow:0 4px 8px rgba(0,0,0,.1);transition:all .3s}
+    .card:hover{transform:translateY(-5px);box-shadow:0 8px 16px rgba(0,0,0,.15)}
+    .card img{width:100%;height:180px;object-fit:cover}
+    .card-content{padding:15px;text-align:center}
+    .card-content h3{color:#2a3d58;margin:10px 0;font-size:1.2rem}
+    .price{font-weight:bold;color:#e74c3c;font-size:1.2rem;margin:10px 0}
+    .wheels-container{display:flex;justify-content:center;margin:15px 0}
+    .wheel{width:25px;height:25px;border:2px solid #333;border-radius:50%;margin:0 10px;transition:transform .5s}
+    .card:hover .wheel{transform:rotate(360deg)}
+    footer{text-align:center;padding:20px;background:#2a3d58;color:#fff;margin-top:30px}
+    .social a{color:#fff;margin:0 10px;font-size:1.2rem}
+    @media (max-width:768px){.grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+
+<div class="nav-icons">
+  <a href="1home.HTML"><i class="fas fa-home"></i></a>
+  <a href="2cars.html" class="active"><i class="fas fa-car"></i></a>
+  <a href="bicycles.html"><i class="fas fa-bicycle"></i></a>
+</div>
+
+<main class="container">
+  <h1 class="page-title">السيارات المتاحة</h1>
+  
+  <div class="grid">
+    <!-- السيارة 1 -->
+    <div class="card">
+      <img src="img/1.jpg" alt="سيارة سيدان">
+      <div class="card-content">
+        <h3>تويوتا لاندكروزر</h3>
+        <p>معروض للبيع سيارة تويوتا لاندكروزر، من السيارات المعروفة بقوتها واعتماديتها، وتُعد خياراً مثالياً للطرق الطويلة والاستخدام اليومي.
+
+مواصفات السيارة:
+
+الموديل: [يرجى تحديد الموديل والسنة]
+
+الحالة: ممتازة جداً
+
+اللون الخارجي: أسود
+
+الممشى: قليل نسبياً
+
+المحرك: [يرجى تحديد نوع المحرك وعدد السلندرات]
+
+نظام الدفع: رباعي (دبل ثقيل وخفيف)
+
+المواصفات: فل كامل أو شبه فل (حسب التجهيزات الفعلية)، تشمل شاشة، كاميرا خلفية، حساسات، أنظمة أمان متقدمة، نظام ملاحة، مقاعد جلد، نظام تبريد وتدفئة للمقاعد، وغيرها
+
+الصيانة: منتظمة وتمت في مراكز معتمدة
+
+السيارة خالية من الحوادث أو الرش، وتم استخدامها بعناية
+</p>
+        <p class="price">قابل للتوافض</p>
+        <div class="wheels-container">
+          <div class="wheel"></div>
+          <div class="wheel"></div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- السيارة 2 -->
+    <div class="card">
+      <img src="img/2.jpg" alt="سيارة دفع رباعي">
+      <div class="card-content">
+        <h3>شفروليه كورفيت</h3>
+        <p>معروض للبيع سيارة شفروليه كورفيت C8، واحدة من أبرز السيارات الرياضية الأمريكية، تتميز بتصميم هجومي وأداء قوي على الطريق، ومناسبة لمحبي السرعة والتميز.
+
+مواصفات السيارة:
+
+الموديل: شفروليه كورفيت C8
+
+الفئة: كشف (Convertible)
+
+الحالة: شبه جديدة
+
+اللون الخارجي: أبيض لؤلؤي
+
+الداخلية: جلد أزرق فاخر
+
+الممشى: قليل جداً
+
+المحرك: V8 وسطي، قوة عالية وأداء ممتاز
+
+ناقل الحركة: أوتوماتيك مزدوج القابض
+
+المواصفات: فل كامل – شاشة لمس، نظام ملاحة، أنظمة قيادة متعددة، كاميرات، حساسات، مقاعد رياضية قابلة للتدفئة والتبريد، أنظمة أمان متقدمة
+
+الصيانة: تمت في الوكالة بشكل منتظم
+
+خالية من الحوادث والعيوب، ومستخدمة بحرص شديد</p>
+        <p class="price">قابل للتوافض</p>
+        <div class="wheels-container">
+          <div class="wheel"></div>
+          <div class="wheel"></div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- السيارة 3) -->
+    <div class="card">
+      <img src="img/3.jpg" alt="سيارة رياضية">
+      <div class="card-content">
+        <h3>مازيراتي جران توريزمو</h3>
+        <p>بحالة ممتازة جداً ونظافتها تجربتها، تستخدم راقٍ ومحافظ بكل تفاصيلها.
+
+مواصفات السيارة:
+
+الموديل: مازيراتي جران توريزمو
+
+الحالة : شبه جديدة
+
+اللون الخارجي: أزرق ملكي
+
+اللون الداخلي: جلد فاخر
+
+الممشى: قليل
+
+المواصفات الفاخرة: فل كامل (شاشة، نظام صوتي فاخر، حساسية أمامية وخلفية، نظام ملاحة، كهربائية، تغيير خلف المقود، وغيرها من المواصفات)
+
+</p>
+        <p class="price">قابل للتوافض</p>
+        <div class="wheels-container">
+          <div class="wheel"></div>
+          <div class="wheel"></div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- السيارة 4 (مضافة) -->
+    <div class="card">
+      <img src="img/4.jpg" alt="سيارة عائلية">
+      <div class="card-content">
+        <h3>مرسيدس E-Class</h3>
+        <p>معروض للبيع سيارة مرسيدس من الفئة E، بحالة ممتازة جداً، أشبه بالوكالة من حيث النظافة والاستخدام.
+
+مواصفات السيارة:
+
+الموديل: E-Class
+
+الحالة: شبه جديدة
+
+اللون الخارجي: أسود
+
+الممشى: قليل جداً
+
+المواصفات: فل كامل (شاشة، رادار، حساسات، كاميرات 360 درجة، نظام توفير وقود، إضاءة داخلية متعددة الألوان، وغيرها من المواصفات الفاخرة)
+
+الداخلية: جلد بحالة ممتازة
+
+الصيانة: تمت في الوكالة بشكل دوري ومنتظم
+
+خالية تماماً من الحوادث أو الرش
+
+السيارة مستخدمة بعناية فائقة، وتم الحفاظ عليها بأعلى مستوى من النظافة والصيانة.
+</p>
+        <p class="price">قابل للتوافض</p>
+        <div class="wheels-container">
+          <div class="wheel"></div>
+          <div class="wheel"></div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- السيارة 5 (مضافة) -->
+    <div class="card">
+      <img src="img/5.jpg" alt="سيارة كهربائية">
+      <div class="card-content">
+        <h3> بورش 911 كشف</h3>
+        <p>حالة ممتازة جداً وقريبة جداً من حالة الوكالة من حيث النظافة والاستخدام.
+
+مواصفات السيارة:
+
+الموديل: بورش 911 كشف
+
+الحالة : شبه جديدة
+
+اللون الخارجي: عنابي مميز
+
+اللون الداخلي: جلد فاخر
+
+الجنط: ذهبي يعطي طابع السيارة فيزيائي الجسم
+
+الممشى: قليل جداً
+
+المواصفات الفاخرة: فل كامل (نظام ترفيهي للوجبات، حساسات، خلفية كاميرا، أنظمة حديثة، أوضاع تصميم متعددة، مجسم متحرك كهربائي، وغيرها من المواصفات)</p>
+        <p class="price">قابل للتوافض</p>
+        <div class="wheels-container">
+          <div class="wheel"></div>
+          <div class="wheel"></div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- السيارة 6 (مضافة) -->
+    <div class="card">
+      <img src="img/6.jpg" alt="سيارة كلاسيكية">
+      <div class="card-content">
+        <h3>كاديلاك اسكاليد</h3>
+        <p>سيارة فخمة وكبيرة بمواصفات عالية جداً، نظيفة وشرط، ومستخدمة استخدام راقٍ ومحدود.
+
+مواصفات السيارة:
+
+الموديل: كاديلاك اسكاليد
+
+الحالة : شبه جديدة
+
+اللون الخارجي: أسود ملكي
+
+اللون الداخلي: جلد فاخر مع خشب ولمسات كروم
+
+الممشى: قليل
+
+المواصفات الفاخرة: فل كامل (شاشات أمامية وخلفية، رادار، تثبيت ذكي، كاميرات 360 درجة، نظام تشغيل صوتي من Bose، تبريد وحركة، عن بعد، إضاءة داخلية متعددة الألوان، فتحة سقف بانورامية، وغيرها من المواصفات</p>
+        <p class="price">قابل للتوافض</p>
+        <div class="wheels-container">
+          <div class="wheel"></div>
+          <div class="wheel"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+</body>
+</html>

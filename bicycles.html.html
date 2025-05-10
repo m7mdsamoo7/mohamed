@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>الدراجات - سوق المركبات</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    :root { --primary: #2a3d58; --secondary: #f4a261; --accent: #e74c3c; --light: #f5f5f5; --dark: #333; }
+    body { font-family: 'Tajawal', sans-serif; margin: 0; padding: 0; background: var(--light); }
+    nav { background: var(--primary); padding: 1rem; position: sticky; top: 0; display: flex; justify-content: center; gap: 1.5rem; }
+    nav a { color: white; text-decoration: none; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; transition: 0.3s; position: relative; }
+    nav a:hover { background: rgba(255,255,255,0.1); transform: scale(1.1); }
+    nav a.active { background: var(--secondary); color: var(--dark); }
+    nav a::after { content: attr(data-tooltip); position: absolute; bottom: -40px; left: 50%; transform: translateX(-50%); background: var(--dark); color: white; padding: 5px 10px; border-radius: 5px; font-size: 0.8rem; opacity: 0; transition: 0.3s; white-space: nowrap; }
+    nav a:hover::after { opacity: 1; bottom: -35px; }
+    .container { max-width: 1200px; margin: 2rem auto; padding: 1.5rem; }
+    .page-title { text-align: center; color: var(--primary); margin-bottom: 2rem; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem; }
+    .card { background: white; border-radius: 0.5rem; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: 0.3s; }
+    .card:hover { transform: translateY(-0.5rem); box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+    .card-img { width: 100%; height: 180px; object-fit: cover; }
+    .card-content { padding: 1.25rem; text-align: center; }
+    .card-content h3 { color: var(--primary); margin: 0.5rem 0; }
+    .price { font-weight: bold; color: var(--accent); font-size: 1.25rem; margin: 1rem 0; }
+    .btn { display: inline-block; background: var(--primary); color: white; padding: 0.5rem 1.5rem; border-radius: 2rem; text-decoration: none; transition: 0.3s; }
+    .btn:hover { background: var(--dark); }
+    footer { text-align: center; padding: 1.5rem; background: var(--primary); color: white; margin-top: 3rem; }
+    @media (max-width: 768px) { nav { gap: 1rem; } nav a { width: 45px; height: 45px; } .grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+<nav>
+  <a href="1home.HTML" data-tooltip="الرئيسية"><i class="fas fa-home"></i></a>
+  <a href="2cars.html" data-tooltip="السيارات"><i class="fas fa-car"></i></a>
+  <a href="bicycles.html" class="active" data-tooltip="الدراجات"><i class="fas fa-bicycle"></i></a>
+</nav>
+<main class="container">
+  <h1 class="page-title">الدراجات المتاحة</h1>
+  <div class="grid">
+
+    <!-- دراجة 1 -->
+    <div class="card">
+      <img src="img/صورة دراجات/IMG_20250510_160247_397.jpg" alt="دراجة جبلية" class="card-img">
+      <div class="card-content">
+        <h3>كاواساكي نينجا</h3>
+        <p>نظيفة جداً وحالتها اسرع للجديدة، استخدام شخصي خفيف ومهتم فيها بشكل كبير.
+
+مواصفات الدراجة:
+
+النوع: كاواساكي نينجا
+
+: [يرجى تحديد الموديل بدقة]
+
+اللون: أسود مطفي
+
+الحالة : شبه جديدة
+
+الممشى: قليل جداً
+
+المواصفات: مكينة قوية، نظام فرامل ABS، شاشة رقمية، نظام تبريد ممتاز، تغيير سلس، تصميم رياضي</p>
+        <span class="price">قابل للتوافض</span>
+      </div>
+    </div>
+
+    <!-- دراجة 2 -->
+    <div class="card">
+      <img src="img/صورة دراجات/IMG_20250510_160248_739.jpg" alt="دراجة طريق" class="card-img">
+      <div class="card-content">
+        <h3>كاواساكي نينجا باللون الأخضر المميز</h3>
+        <p>حالة شبه وكالة، استخدام نظيف ومحافظ عليها بكل التفاصيل.
+
+مواصفات الدراجة:
+
+النوع: كاواساكي نينجا
+
+اللون: أخضر × أسود (لون رياضي ومميز جداً)
+
+الحالة: نظيفة جداً وقريبة من الجديدة
+
+الممشى: قليل
+
+المواصفات: شاشة رقمية، فرامل ABS، نظام تبريد ممتاز، أداء قوي، تصميم انسيابي وشرس، صوت رياضي
+
+ترميم: كنيسة ومتابعة أول بأول
+
+خالية من أي حوادث أو تعديلات</p>
+        <span class="price">قابل للتوافض</span>
+      </div>
+    </div>
+
+    <!-- دراجة 3 -->
+    <div class="card">
+      <img src="img/صورة دراجات/IMG_20250510_160250_985.jpg" alt="دراجة كهربائية" class="card-img">
+      <div class="card-content">
+        <h3>دوكاتي رياضية فاخرة</h3>
+        <p>مميزة عن العلم الإيطالي، نظافة عالية جدًا وحالة أقرب ما تكون للوكالة.
+
+مواصفات الدراجة:
+
+النوع: دوكاتي
+
+اللون: ثلاثي (أحمر، أبيض، أخضر) – إصدار خاص ومميز
+
+الحالة : شبه جديدة
+
+الممشى: قليل جداً
+
+المواصفات: أداء عالي جداً، فرامل بريمبو، نظام تعليق Ohlins، شاشة رقمية متطورة، عدة وضعيات قيادة، صوت رياضي عدواني مسابقات دوكاتي، تصميم انسيابي حاد</p>
+        <span class="price">قابل للتوافض</span>
+
+      </div>
+    </div>
+
+    <!-- دراجة 4 -->
+    <div class="card">
+      <img src="img/صورة دراجات/IMG_20250510_160252_928.jpg" alt="دراجة أطفال" class="card-img">
+      <div class="card-content">
+        <h3>دوكاتي Panigale</h3>
+        <p>ممتازة جداً، لون أحمر ناري يخطف الأنظار، نظيف للغاية وحالتها ممتازة، استخدام محدود وراعيها مهتم فيها بكل التفاصيل.
+
+مواصفات الدراجة:
+
+النوع: دوكاتي Panigale
+
+اللون: أحمر
+
+الحالة: وكالة شبه
+
+الممشى: قليل
+
+المواصفات: مكينة قوية جدًا، نظام تشغيل متعدد، شاشة رقمية، فرامل بريمبو، عزم وسرعة عالية، نظام تعليق رياضي، شكل هجومي، وتصميم انسيابي من أجمل ما صنع دوكاتي</p>
+        <span class="price">قابل للتوافض</span>
+      </div>
+    </div>
+
+    <!-- دراجة 5 -->
+    <div class="card">
+      <img src="img/صورة دراجات/IMG_20250510_160254_238.jpg" alt="دراجة سباق" class="card-img">
+      <div class="card-content">
+        <h3>كاواساكي ZX-10R</h3>
+        <p>دراجة رياضية رأسية، نظيفة للغاية ومجهزة لعشاق الأداء العالي.
+
+مواصفات الدراجة:
+
+النوع: كاواساكي ZX-10R
+
+اللون: رمادي تيتانيوم (لون نادر وفخم)
+
+الحالة : شبه جديدة
+
+الممشى: قليل جداً
+
+المواصفات: مكينة قوية جداً، نظام تشغيل متعدد، Quick Shifter، شاشة رقمية، فرامل بريمبو، نظام تعليق متطور، جنوط رياضية، تعديل خفيف على بعض القطع (للي حاب الأداء الأفضل)
+
+ترميم: ترميم ومتابعة جديدة</p>
+        <span class="price">قابل للتوافض</span>
+      </div>
+    </div>
+
+    <!-- دراجة 6 -->
+    <div class="card">
+      <img src="img/صورة دراجات/IMG_20250510_160256_057.jpg" alt="دراجة هجينة" class="card-img">
+      <div class="card-content">
+        <h3> BMW S1000RR إصدار M Performance</h3>
+        <p>احدة من العمل الشاق لقيادة السيارات الرياضية في العالم، بحالة ممتازة للغاية ونظافة عالية.
+
+مواصفات الدراجة:
+
+النوع: BMW S1000RR – M Package
+
+اللون: أبيض × أزرق × أحمر (ألوان M الشهيرة)
+
+الحالة: وكالة شبه
+
+الممشى: قليل
+
+المواصفات: Quick Shifter، أنظمة تشغيل متعددة، نظام تحكم بالثبات، ABS، شاشة TFT ملونة، عادي أكرابوفيتش، فرامل بريمبو، كاربون فايبر في بعض القطع</p>
+             <span class="price">قابل للتوافض</span>
+      </div>
+    </div>
+
+  </div>
+</main>
+
